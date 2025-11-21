@@ -1,0 +1,77 @@
+.detalle-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #f8f9fa;
+}
+
+.detalle-card {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    width: 100%;
+}
+
+.detalle-img-wrapper {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.detalle-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detalle-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.detalle-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.detalle-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.detalle-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2a9d8f;
+}
+
+.detalle-btn {
+    padding: 12px 20px;
+    background: #2a9d8f;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.detalle-btn:hover {
+    background: #21867a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .detalle-card {
+        flex-direction: column;
+    }
+}
